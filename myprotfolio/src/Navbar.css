@@ -1,6 +1,7 @@
 .nav{
     box-sizing: border-box;
     font-size: 18px;
+    width: 100vw;
     font-family:monospace;
     font-weight: 500;
     height:60px;
@@ -34,46 +35,54 @@
     float:right;
 }
 
-
-
-@media screen and (max-width: 768px) {
-    .nav{
-        position:fixed;
-        height:40px;
-        width:100vw;
-    }
-    #navLink1{
-      line-height:40px;
-    }
-      #navLink2 {
-        line-height:40px;
-        width:100vw;
-        margin-left:2vw;
-        position:absolute;
-        top:40px;
-      }
-      #navLink3 {
-        line-height:40px;
-        width:100vw;
-        margin-left:2vw;
-        position:absolute;
-        top:80px;
-      }
-      #navLink4 {
-        line-height:40px;
-        width:100vw;
-        margin-left:2vw;
-        position:absolute;
-        top:120px;
-        float:none;
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-      }
-      #navIcon{
-        display:inherit;
-        position:relative;
-        width:0;
-        margin: auto;
-        float:right;
-      }
+@media screen and (max-width:768px){
+  .nav{
+    position: fixed;
+    height:40px;
   }
+  #navLink1{
+    height: 40px;
+    line-height:40px;
+  }
+  #navIcon{
+      display:inline;
+      position:relative;
+      float:right;
+      margin-right:10vw;
+  }
+  .navLinkSpanSmall:not(:nth-child(1)){
+      display:none;
+  }
+
+  .navLinkSpanSmallToggle:not(:nth-child(1)){
+    margin-left:2vw;
+    line-height:40px;
+    width:100vw;
+    height:40px;
+  }
+
+  #navLink1.navLinkSpanSmallToggle{
+    left:2vw;
+    line-height:40px;
+    height:40px;
+  }
+
+  #navLink2.navLinkSpanSmallToggle{
+    position: absolute;
+    top:40px;
+  }
+
+  #navLink3.navLinkSpanSmallToggle{
+    position: absolute;
+    top:80px;
+  }
+
+  #navLink4.navLinkSpanSmallToggle{
+    position: absolute;
+    top:120px;
+    float:none;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+  }
+
+}
