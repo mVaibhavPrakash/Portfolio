@@ -1,7 +1,8 @@
 import React from 'react';
-import './Navbar.css';
 import {FaAlignJustify} from 'react-icons/fa';
 import Navpart from './Navpart';
+import '../css/navbar.css';
+
 class Navbar extends React.Component{
     constructor(props){
         super(props);
