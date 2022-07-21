@@ -19,7 +19,7 @@ const option = {
 };
 
 console.log(window.screen.width);
-option.rootMargin = '500px';
+option.rootMargin = '0px';
 console.log(option.rootMargin);
 
 const observer = new IntersectionObserver(callback, option);
