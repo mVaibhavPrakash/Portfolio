@@ -15,12 +15,10 @@ const callback = (entries) => {
 };
 
 const option = {
+  root: document.querySelector('.container'),
   threshold: 1,
+  rootMargin: '0px',
 };
-
-console.log(window.screen.width);
-option.rootMargin = '0px';
-console.log(option.rootMargin);
 
 const observer = new IntersectionObserver(callback, option);
 
