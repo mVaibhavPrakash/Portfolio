@@ -1,0 +1,44 @@
+
+#experience{
+    width:50vw;
+    margin: 0 auto;
+}
+
+.experience{
+    opacity: 0;
+}
+
+#experience h2{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+    visibility: visible;
+    opacity: 1;
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.5;
+}
+
+#experience h2::before{
+    position: relative;
+    counter-increment: section 2;
+    content: "0" counter(section) ".";
+    margin-right: 20px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    font-weight: 400;
+}
+
+#experience h2::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: rgb(141, 147, 157);
+}

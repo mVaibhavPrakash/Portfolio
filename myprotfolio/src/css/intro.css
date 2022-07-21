@@ -1,0 +1,140 @@
+
+#intro{
+    color: white;
+    width:65vw;
+    margin: 0 auto;
+    margin-bottom: 180px;
+}
+
+#intro-p{
+    word-wrap: break-word;
+    color:var(--lightest-slate);
+    width:80%;
+    padding: 0;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+.intro-p{
+    opacity: 0;
+}
+
+.active-p{
+    transition: opacity 2.5s linear;
+    opacity: 1;
+}
+
+.intro{
+    opacity: 0;
+}
+
+h1{
+    color:#020c1b;
+    font-size:5rem;
+    font-family: sans-serif;
+    word-break: break-word;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+h1 span{
+    opacity:0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(50px);
+    position: relative;
+    display: inline-block;
+}
+
+h1 span.fade{
+    opacity: 1;
+    transform: translateY(0px);
+    color: #64ffda;
+    text-shadow: 4px 4px white;
+}
+
+.fade:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.3,1.3);
+    color: #f3f3f3;
+    text-shadow: 4px 4px #64ffda;
+}
+
+#break{
+    animation: break 3s 2 linear;
+    transform: scale(1.2,1.2);
+    color: #f3f3f3;
+    text-shadow: 4px 4px #64ffda;
+}
+
+@keyframes break{
+    0%{
+        transform: scale(0.8,0.8);
+        color:white;
+        text-shadow: 4px 4px #64ffda;
+    }
+    12.5%{
+        transform: scale(1,1);
+        color:#d1e1dd;
+        text-shadow: 4px 4px #64ffda;
+    }
+    25%{
+        transform: scale(1.2,1.2);
+        color:#b5cdc8;
+        text-shadow: 4px 4px #64ffda;
+    }
+    50%{
+        transform: scale(1.4,1.4);
+        color:#64ffda;
+        text-shadow: 4px 4px white;
+    }
+    62.5%{
+        transform: scale(1.4,1.4);
+        color:#b5cdc8;
+        text-shadow: 4px 4px #64ffda;
+    }
+    75%{
+        transform: scale(1.2,1.2);
+        color:#d1e1dd;
+        text-shadow: 4px 4px #64ffda;
+    }87.5%{
+        transform: scale(1,1);
+        color:#64ffda;
+        text-shadow: 4px 4px white;
+    }
+
+    100%{
+        transform: scale(0.8,0.8);
+        color:#64ffda;
+        text-shadow: 4px 4px white;
+    }
+}
+
+@media screen and (max-width:900px) {
+    h1{
+        font-size:3rem;
+    }
+}
+@media screen and (max-width:550px) {
+    h1{
+        font-size:2.5rem;
+    }
+    #intro{
+        width:90vw;
+    }h1 span.fade{
+        text-shadow: 2px 2px white;
+    }
+    
+    .fade:hover{
+        text-shadow: 2px 2px #64ffda;
+    }
+    
+    #break{
+        text-shadow: 2px 2px #64ffda;
+    }#intro-p{
+        font-size: 1.1rem;
+        line-height: 1.8;
+        width: 100%;
+    }
+    
+}

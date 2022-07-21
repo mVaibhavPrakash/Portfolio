@@ -1,11 +1,10 @@
-import React from 'react';
 import {FaWalking,FaTools,FaBook,FaUserTie} from "react-icons/fa";
 
 
-function Navpart(props){
+const Navpart = (props) =>{
     return (
-        <span className={props.class} id={props.id}>
-            {props.id==='navLink1'?<FaUserTie color='grey' size='20px' />:props.id==='navLink2'?<FaTools color='grey' size='20px' />:props.id==='navLink3'?<FaWalking color='grey' size='20px' />:<FaBook color='grey' size='20px' />}
+        <span className="link-li">
+            {props.ico==='FaUserTie' ?<FaUserTie className="icon"  />:props.ico==='FaTools'?<FaTools className="icon" />:props.ico==='FaWalking'?<FaWalking className="icon"  />:<FaBook className="icon" />}
             <a className="navLink" href={props.href}>{props.text}</a>
         </span>
     );
