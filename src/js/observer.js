@@ -14,10 +14,13 @@ const callback = (entries) => {
   });
 };
 
-const observer = new IntersectionObserver(callback, {
+const option = {
   threshold: 1,
-  rootMargin: '0px',
-});
+};
+
+option.rootMargin = window.screen.width < 570 ? '500px' : '300px';
+
+const observer = new IntersectionObserver(callback, option);
 
 observer.observe(document.getElementsByClassName('intro')[0]);
 observer.observe(document.getElementsByClassName('intro-p')[0]);
