@@ -18,7 +18,9 @@ const option = {
   threshold: 1,
 };
 
-option.rootMargin = window.screen.width < 570 ? '500px' : '300px';
+console.log(window.screen.width);
+option.rootMargin = window.screen.width < '570' ? '500px' : '300px';
+console.log(option.rootMargin);
 
 const observer = new IntersectionObserver(callback, option);
 
