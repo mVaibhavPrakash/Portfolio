@@ -15,8 +15,8 @@ const callback = (entries) => {
 };
 
 const option = {
-  root: document.querySelector('.container'),
-  threshold: 1,
+  root: document.body,
+  threshold: 0.9,
   rootMargin: '0px',
 };
 
