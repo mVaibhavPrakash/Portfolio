@@ -41,7 +41,7 @@
     width: 400px;
     height: 1px;
     margin-left: 20px;
-    background-color: rgb(141, 147, 157);
+    background-color: var(--green);
 }
 
 #about h2{
@@ -51,4 +51,9 @@
 
 #about p{
     color: rgb(203, 214, 208);
+    font-family: monospace;
+}
+
+p span{
+    color: rgb(100, 255, 218);
 }

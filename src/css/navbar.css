@@ -42,10 +42,11 @@
   z-index: 12;
 }
 
-#navRight{ 
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
+#navRight{
+  position: relative;
+  width: 50vw;
+  left:50vw;
+  right:0;
 }
 
 #navRight ol{
@@ -57,8 +58,9 @@
   font-family: var(--font-mono);
   box-sizing: inherit;
   display: flex;
+  right:0;
   -webkit-box-pack: justify;
-  justify-content: space-between;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   align-items: center;
   padding: 0px;
@@ -74,10 +76,9 @@
   font-family: var(--font-mono);
   list-style: none;
   box-sizing: inherit;
-  margin: 0px 5px;
   position: relative;
   counter-increment: item 1;
-  font-size: var(--fz-xs);
+  font-size: 1.1rem;
   transition-delay: 0ms;
 }
 
@@ -95,7 +96,7 @@
   content: "0" counter(item) ".";
 margin-right: 5px;
 color: var(--green);
-font-size: var(--fz-xxs);
+font-size: 1.1rem;
 text-align: right;
 }
 

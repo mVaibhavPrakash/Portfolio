@@ -1,0 +1,95 @@
+.sidenav{
+    opacity: 0;
+}
+
+#rightSideNav{
+    position:fixed;
+    bottom: 0;
+    width:19px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 0 auto;
+    right: 3.5vw;
+}
+
+#rightSideNav a{  
+    display: inline-block;
+    color:var(--green);
+    text-decoration: none;
+    font-family: monospace;
+    writing-mode: vertical-rl;
+}
+
+#rightSideNav a:hover{
+    color: var(--lightest-slate);
+    transform: translateY(-5px);
+
+}
+
+
+#leftSideNav{
+    position:fixed;
+    width: 25px;
+    bottom: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    left: 3.5vw;
+}
+
+.icon{
+    margin-bottom: 40px;
+    color: var(--lightest-slate);
+}
+
+.icon:hover{
+    color:var(--green);
+    transform: translateY(-5px);
+}
+
+#leftSideNav::after{ 
+    content: "";
+    display: block;
+    width: 1px;
+    height: 13vh;
+    bottom: 0;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: var(--green);
+}
+
+#rightSideNav::after{ 
+    content: "";
+    display: block;
+    width: 1px;
+    height: 13vh;
+    bottom: 0;
+    margin: 0px auto;
+    margin-top: 35px;
+    background-color: var(--lightest-slate);
+}
+
+@media screen and (max-width:770px) {
+    #leftSideNav{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40vw;
+        left: 5vw;
+    }
+
+    .icon{
+        margin-top: 30px;
+    }
+
+    #leftSideNav::after{
+        display: none;
+    }
+
+   #rightSideNav{
+        display: none;
+    }
+}

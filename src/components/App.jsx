@@ -3,6 +3,8 @@ import '../css/app.css'
 import Intro from './Intro';
 import About from './About';
 import Experience from './Experience';
+import LeftSideNav from './LeftSideNav'
+import RightSideNav from './RightSideNav';
 import ('../js/observer.js')
 
 function App() {
@@ -13,6 +15,10 @@ function App() {
       <Intro/>
       <About/>
       <Experience/>
+      <div className='sideBar'>
+        <LeftSideNav/>
+        <RightSideNav/>
+      </div>
       </div>
     </div>
   );
