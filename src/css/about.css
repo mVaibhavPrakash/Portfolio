@@ -23,15 +23,9 @@
     line-height: 1.5;
 }
 
-#about h2::before{
-    position: relative;
-    counter-increment: section 1;
-    content: "0" counter(section) ".";
-    margin-right: 20px;
+#about h2::first-letter{
     color: var(--green);
-    font-family: var(--font-mono);
-    font-size: clamp(26px,5vw,var(--fz-heading));
-    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 #about h2::after{
@@ -56,4 +50,24 @@
 
 p span{
     color: rgb(100, 255, 218);
+}
+
+
+
+@media screen and (max-width:900px) {
+    #about{
+        width:85vw;
+    }
+    #about h2{
+        font-size:3rem;
+    }
+}
+@media screen and (max-width:550px) {
+    #about h2{
+        font-size:2.5rem;
+    }
+    #about{
+        width:90vw;
+    }
+    
 }

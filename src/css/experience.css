@@ -22,15 +22,9 @@
     line-height: 1.5;
 }
 
-#experience h2::before{
-    position: relative;
-    counter-increment: section 2;
-    content: "0" counter(section) ".";
-    margin-right: 20px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: clamp(26px,5vw,var(--fz-heading));
-    font-weight: 400;
+#experience h2::first-letter{
+  color: var(--green);
+  letter-spacing: 2px;
 }
 
 #experience h2::after{

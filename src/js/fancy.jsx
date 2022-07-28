@@ -1,3 +1,4 @@
+import Image from '../img/vaibhav.png'
 const text = document.querySelector('.deco');
 const strText = text.innerHTML;
 const split = strText.split('');
@@ -22,7 +23,8 @@ while (i < split.length) {
     x++;
   } else {
     if (split[i] === 'V') {
-      text.innerHTML += '<span id="break">' + split[i] + '</span>';
+      text.innerHTML +=
+        `<span id='break'><img src=${Image} alt='V'/></span>`;
     } else text.innerHTML += '<span>' + split[i] + '</span>';
     i++;
     x++;
