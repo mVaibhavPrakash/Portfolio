@@ -5,6 +5,7 @@ import About from './About';
 import Experience from './Experience';
 import LeftSideNav from './LeftSideNav'
 import RightSideNav from './RightSideNav';
+import Skils from './Skils';
 import ('../js/observer.js')
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Intro/>
       <About/>
       <Experience/>
+      <Skils/>
       <div className='sideBar'>
         <LeftSideNav/>
         <RightSideNav/>

@@ -5,12 +5,6 @@
     top:100px;
 }
 
-.active{
-    transition: opacity 2.5s linear;
-    opacity: 1;
-}
-
-
 @media screen and (max-width:550px) {
     .content{
         top:200px;

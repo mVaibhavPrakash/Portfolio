@@ -1,7 +1,9 @@
 const callback = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      if (entry.target.className === 'intro-p') {
+      if (Object.values(entry.target.classList).includes('skills-icon')) {
+        entry.target.classList.add('active');
+      } else if (entry.target.className === 'intro-p') {
         entry.target.className = 'active-p';
       } else {
         entry.target.className = 'active';
@@ -25,3 +27,9 @@ observer.observe(document.getElementsByClassName('about')[0]);
 observer.observe(document.getElementsByClassName('experience')[0]);
 observer.observe(document.getElementsByClassName('sidenav')[0]);
 observer.observe(document.getElementsByClassName('sidenav')[1]);
+observer.observe(document.getElementsByClassName('skill')[0]);
+const icons = document.getElementsByClassName('skills-icon');
+
+for (let i = 0; i < icons.length; i++) {
+  observer.observe(icons[i]);
+}

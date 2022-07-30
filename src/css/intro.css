@@ -111,6 +111,11 @@ h1 span.fade{
     background-color: rgb(100, 255, 218,0.4)
 }
 
+.active{
+    transition: opacity 2.5s linear !important;
+    opacity: 1 !important;
+}
+
 @media screen and (max-width:900px) {
     #intro{
         width:85vw;

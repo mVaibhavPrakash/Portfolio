@@ -211,6 +211,12 @@
   left: 4vw;
 }
 
+.active{
+  transition: opacity 2.5s linear !important;
+  opacity: 1 !important;
+}
+
+
 .lpage-a{
   cursor: pointer;
   text-decoration: none;
@@ -262,7 +268,7 @@
 }
 
 #lpage-home:hover, #lpage-about:hover,#lpage-blogs:hover,#lpage-login:hover,#lpage-logout:hover{
-  color:#2d386e;
+  color:var(--green);
 }
 
 #lpage-profile{

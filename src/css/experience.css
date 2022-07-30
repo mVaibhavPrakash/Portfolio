@@ -1,6 +1,6 @@
 
 #experience{
-    width:50vw;
+    width:57vw;
     margin: 0 auto;
 }
 
@@ -35,4 +35,9 @@
     height: 1px;
     margin-left: 20px;
     background-color: rgb(141, 147, 157);
+}
+
+.active{
+    transition: opacity 2.5s linear !important;
+    opacity: 1 !important;
 }
