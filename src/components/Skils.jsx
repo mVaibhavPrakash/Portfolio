@@ -4,6 +4,7 @@ import {faAngleLeft,faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import Carousel from '../js/carousel'
 import carouselClick from '../js/carouselClick'
 import '../css/skills.css'
+import Cards from './Cards'
 
 const Skils = () => {
     const windowSize = useRef(5)
@@ -11,12 +12,9 @@ const Skils = () => {
     const InnerCarousel =useRef(null)
 
     useEffect(() =>{
-        if(window.innerWidth <= '1450' && window.innerWidth > '900'){
-            windowSize.current=3;
-        }if(window.innerWidth <='900' && window.innerWidth > '550'){
+        if(window.innerWidth <= '1450' && window.innerWidth > '1000'){
             windowSize.current=4;
-        }
-        if(window.innerWidth <= '550'){
+        }if(window.innerWidth <='1000'){
             windowSize.current=3;
         }
         InnerCarousel.current = Carousel(windowSize.current,startIndex.current);
@@ -29,6 +27,7 @@ const Skils = () => {
   return (
     <section id='skill' className='skill'>
     <h2>Skills</h2>
+    <Cards/>
     <div className="skills-icons">
     <button id='carousel-left-btn' onClick={(e)=> carouselClick(e, -1,InnerCarousel)}><FontAwesomeIcon icon={faAngleLeft}  /></button>
         <i className="devicon-javascript-plain skills-icon"></i>
