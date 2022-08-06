@@ -42,8 +42,8 @@ const Skils = () => {
         <i className="devicon-mongodb-plain-wordmark skills-icon"></i>
         <i className="devicon-docker-plain-wordmark skills-icon"></i>
         <i className="devicon-kubernetes-plain-wordmark skills-icon"></i>
-        <i class="devicon-git-plain-wordmark skills-icon"></i>
-        <i class="devicon-github-original-wordmark skills-icon"></i>
+        <i className="devicon-git-plain-wordmark skills-icon"></i>
+        <i className="devicon-github-original-wordmark skills-icon"></i>
         <i className="devicon-webpack-plain skills-icon"></i>
         <i className="devicon-azure-plain-wordmark skills-icon"></i>
         <button id='carousel-right-btn' onClick={(e)=> carouselClick(e,1,InnerCarousel)}><FontAwesomeIcon icon={faAngleRight} /></button>
