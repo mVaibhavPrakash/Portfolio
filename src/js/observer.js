@@ -28,6 +28,7 @@ observer.observe(document.getElementsByClassName('experience')[0]);
 observer.observe(document.getElementsByClassName('sidenav')[0]);
 observer.observe(document.getElementsByClassName('sidenav')[1]);
 observer.observe(document.getElementsByClassName('skill')[0]);
+observer.observe(document.getElementsByClassName('projects')[0]);
 const icons = document.getElementsByClassName('skills-icon');
 
 for (let i = 0; i < icons.length; i++) {

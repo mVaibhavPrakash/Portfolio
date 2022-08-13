@@ -1,0 +1,63 @@
+.project-box {
+    max-height:800px;
+    position: relative;
+    margin:0 auto;
+    margin-bottom: 50px;
+  }
+  .project-img {
+    display: inline-block;
+    max-width:500px;
+    max-height:800px;
+    object-fit: contain;
+  }
+  .shade {
+    width: 500px;
+    height: 100%;
+    background: var(--green);
+    opacity: 0.3;
+    position: absolute;
+    top:0;
+    z-index: 2;
+  }
+
+  .project-box .content{
+    display: inline-block;
+  }
+  .project-box .icons{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    font-size: 50px;
+    top:0;
+    z-index: 3;
+    background-color: rgb(10, 25, 47,0.8);
+}
+
+.project-box .icons .iconn{
+    margin-top: 10px;
+    display: inline-block;
+    line-height: 500px;
+    align-items: center;
+    color: white;
+    margin-right:20px;
+    margin-left: 20px;
+  }
+
+@media screen and (max-width:550px) {
+    .content{
+        top:150px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .sideBar{
+        width: 100vw;
+        display: fixed;
+        bottom: 0;
+        height: 100px;
+    }
+    
+}

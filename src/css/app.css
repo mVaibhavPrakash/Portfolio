@@ -5,63 +5,12 @@
     top:100px;
 }
 
-.project-box {
-    width:65vw;
-    max-height:800px;
-    position: relative;
-    margin:0 auto;
-    margin-bottom: 50px;
-  }
-  .project-img {
-    display: inline-block;
-    max-width:500px;
-    max-height:800px;
-    object-fit: contain;
-  }
-  .shade {
-    width: 500px;
-    height: 100%;
-    background: var(--green);
-    opacity: 0.3;
-    position: absolute;
-    top:0;
-  }
-
-  .project-box .content{
-    display: inline-block;
-  }
-  .project-box .icons{
-    opacity: 0;
-    width: 500px;
-    height: 40px;
-}
-
-.project-box .icons .icon{
-    margin-top: 10px;
-    display: inline-block;
-    font-size: 25px;
-  }
-
-  .shade:hover{
-    opacity: 0;
-  }
-
-@media screen and (max-width:550px) {
-    .content{
-        top:150px;
-    }
-}
-
 @media screen and (min-width:900px) {
-    .sideBar{
-        width: 100vw;
-        display: fixed;
-        bottom: 0;
-        height: 100px;
-    }
-    body{
-        background-color: red;
-        width:100px;
-    }
-    
+  .sideBar{
+      width: 100vw;
+      display: fixed;
+      bottom: 0;
+      height: 100px;
+  }
+  
 }
