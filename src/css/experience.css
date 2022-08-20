@@ -1,11 +1,79 @@
 
 #experience{
-    width:57vw;
+    width:50vw;
     margin: 0 auto;
+    scroll-snap-align: start;
+    margin-bottom: 125px;
+}
+
+#experience h2{
+    margin-bottom: 80px;
 }
 
 .experience{
     opacity: 0;
+}
+
+.exp-content{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.exp-content .sidena{
+    width: 15vw;
+    margin: 0;
+    border-left: 1px solid var(--slate);
+}
+
+button{
+    background: none;
+    border: none;
+    color: var(--lightest-slate);
+    height: 50px;
+    line-height: 50px;
+    padding:10px 20px;
+    font-size: 1.1rem;
+}
+
+#tcs{
+    width:35vw;
+    margin: 0;
+}
+
+#tcs h3{
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#tcs h3 span{
+    color: var(--green);
+}
+
+#tcs p{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 20px;
+    margin: 0;
+}
+
+li span{
+    color: var(--green);
+}
+
+li::marker{
+    font-size: 2rem;
+}
+
+#btn-tcs{
+    border-left: 4px solid var(--green);
+    color: var(--green);
+    background-color: var(--light-navy);
 }
 
 #experience h2{
@@ -34,7 +102,7 @@
     width: 400px;
     height: 1px;
     margin-left: 20px;
-    background-color: rgb(141, 147, 157);
+    background-color: var(--green);
 }
 
 .active{

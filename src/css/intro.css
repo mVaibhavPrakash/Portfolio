@@ -4,6 +4,7 @@
     width:65vw;
     margin: 0 auto;
     margin-bottom: 180px;
+    scroll-snap-align: start;
 }
 
 #intro-p{

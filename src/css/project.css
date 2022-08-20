@@ -1,17 +1,47 @@
 .project-box {
-    max-height:800px;
     position: relative;
+    max-height:600px;
     margin:0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    flex-direction: column;
   }
+
+  #one{
+    display: flex;
+    margin-bottom: 70px;
+  }
+
+  #two{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 70px;
+  }
+
+  #three{
+    display: flex;
+    margin-bottom: 70px;
+  }
+
+  #one .project-box{
+    float: left;
+  }
+  
+  #two .project-box{
+    float: right;
+  }
+  
+  #three .project-box{
+    float: left;
+  }
+
   .project-img {
     display: inline-block;
-    max-width:500px;
-    max-height:800px;
+    max-width:600px;
+    max-height:600px;
     object-fit: contain;
   }
   .shade {
-    width: 500px;
+    width: 600px;
     height: 100%;
     background: var(--green);
     opacity: 0.3;
@@ -27,7 +57,7 @@
     display: none;
     align-items: center;
     justify-content: space-between;
-    width: 500px;
+    width: 600px;
     height: 100%;
     position: absolute;
     font-size: 50px;
@@ -39,11 +69,73 @@
 .project-box .icons .iconn{
     margin-top: 10px;
     display: inline-block;
-    line-height: 500px;
+    line-height: 600px;
     align-items: center;
     color: white;
+  }
+
+  .iconn:nth-child(1){
+    margin-left: 200px;
+
+  }
+
+  .iconn:nth-child(2){
+    margin-right:200px;
+  }
+
+  .project{
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    position: relative;
+  }
+
+  .project-title{
+    margin:0;
+    font-size: 2rem;
+    font-family: monospace;
+  }
+
+  .project-title a{
+    text-decoration: none;
+    cursor: pointer;
+    color:var(--slate);
+  }
+
+  .project-desc{
+    background-color:var(--light-navy);
+    font-family: monospace;
+    padding: 20px;
+    width: 600px;
+    z-index: 1000;
+  }
+
+  .project-desc span{
+    color: var(--green);
+  }
+
+  .project-tech{
+    width:500px;
+  }
+
+  .project-tech span{
     margin-right:20px;
-    margin-left: 20px;
+    color: var(--green);
+    font-family: monospace;
+  }
+
+  #one .project{
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  #two .project{
+    text-align: left;
+  }
+
+  #three .project{
+    text-align: right;
+    align-items: flex-end;
   }
 
 @media screen and (max-width:550px) {

@@ -7,6 +7,7 @@
     margin: 0 auto;
     margin-bottom: 100px;
     word-wrap: break-word;
+    scroll-snap-align: start;
 }
 
 #about h2{
@@ -39,7 +40,7 @@
 }
 
 #about h2{
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 

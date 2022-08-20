@@ -1,8 +1,8 @@
 
 import { useRef } from 'react'
-import img1 from '../img/EditorWeb.webp'
-import img2 from '../img/NewGen.webp'
-import img3 from '../img/ProtfolioWeb.webp'
+import img2 from '../img/editor.webp'
+import img1 from '../img/newgen.webp'
+import img3 from '../img/protfolio.webp'
 import Project from './Project'
 import '../css/projects.css'
 
@@ -16,9 +16,58 @@ const Projects = () => {
   return ( 
   <section id='projects' className='projects'>
       <h2>My Personal Projects</h2>
-    <Project img={img1} icon={icon1} shade={shade1}/>
-    <Project img={img2} icon={icon2} shade={shade2}/>
-    <Project img={img3} icon={icon3} shade={shade3}/>
+
+    <div id='one'>
+      <Project img={img1} icon={icon1} shade={shade1}/>
+      <div className='project'>
+          <p className='project-title'>
+            <a href="http://github.com/mvaibhavprakash/" target="_blank" rel="noopener noreferrer">NewGen</a>
+          </p>
+          <p className='project-desc'>A Blogging Website.Based on <span>Microservice Architecture</span>. User can <span>Signup, login, create-update profile</span>. User can ceate blog using a very modern <span>Markdown Editor( Neu Editor)</span>. User Authorized using <span>JWT</span>.</p>
+          <p className='project-tech'>
+          <span>React</span>
+          <span>Microservices</span>
+          <span>React Markdown</span>
+          <span>Redux</span>
+          <span>Ngnix</span>
+          <span>JWT</span>
+          </p>
+      </div>
+    </div>
+
+    <div id='two'>
+      <Project img={img2} icon={icon2} shade={shade2}/>
+      <div className='project'>
+          <p className='project-title'>
+            <a href="http://github.com/mvaibhavprakash/" target="_blank" rel="noopener noreferrer">Neu Editor</a>
+          </p>
+          <p className='project-desc'>A <span>Markdown Editor</span>, with features like <span>live preview, draft saving, resive option</span> etc.</p>
+          <p className='project-tech'>
+          <span>React</span>
+          <span>React Markdown</span>
+          <span>CSS</span>
+          <span>Debounce</span>
+          </p>
+      </div>
+    </div>
+
+    <div id='three'>
+      <Project img={img3} icon={icon3} shade={shade3}/>
+      <div className='project'>
+          <p className='project-title'>
+            <a href="http://github.com/mvaibhavprakash/" target="_blank" rel="noopener noreferrer">NewGen</a>
+          </p>
+          <p className='project-desc'>A Blogging Website. Options</p>
+          <p className='project-tech'>
+            <span>APP</span>
+            <span>APP</span>
+            <span>APP</span>
+            <span>APP</span>
+            <span>APP</span>
+            <span>APP</span>
+          </p>
+      </div>
+    </div>
   </section>
   )
 }

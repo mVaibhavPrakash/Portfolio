@@ -3,6 +3,7 @@
     flex-direction: column;
     position: relative;
     top:100px;
+    scroll-snap-type: y proximity;
 }
 
 @media screen and (min-width:900px) {

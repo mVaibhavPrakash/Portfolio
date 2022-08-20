@@ -14,9 +14,11 @@ const Navbar = () => {
                 <img id="lpage-navbarCompanyLogo" src={Image} alt='Img'/>
             </div>
             <div className={`lpage-navbarRight${toggle}`}>
-                <a href='#intro' className='lpage-a' id="lpage-home" >Home</a>
+                <a href='#intro' className='lpage-a' id="lpage-intro" >Top</a>
                 <a href='#about' className='lpage-a' id="lpage-about">About</a>
-                <a href='#experience' className='lpage-a' id="lpage-login">Experience</a> 
+                <a href='#experience' className='lpage-a' id="lpage-exp">Experience</a> 
+                <a href='#skill' className='lpage-a' id="lpage-skills">Skills</a> 
+                <a href='#projects' className='lpage-a' id="lpage-projects">Projects</a> 
             </div>
             <div className="lpage-navbarButton"  onClick={e=>{click(e,toggle,setToggle)}}>
                 <span id='lpage-span1'></span>

@@ -1,187 +1,3 @@
-.header{
-  color: var(--slate);
-  font-family: var(--font-sans);
-  font-size: var(--fz-xl);
-  line-height: 1.3;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0px;
-  z-index: 11;
-  width: 100%;
-  height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
-  backdrop-filter: blur(10px);
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  padding: 0px 40px;
-}
-
-.headerDiv{ 
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0px;
-  z-index: 11;
-  width: 100%;
-  height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
-  backdrop-filter: blur(10px);
-  font-size: var(--fz-xl);
-  line-height: 1.3;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  box-sizing: inherit;
-  color: var(--lightest-slate);
-  font-family: var(--font-mono);
-  z-index: 12;
-}
-
-#navRight{
-  position: relative;
-  width: 50vw;
-  left:50vw;
-  right:0;
-}
-
-#navRight ol{
-  font-size: var(--fz-xl);
-  line-height: 1.3;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  color: var(--lightest-slate);
-  font-family: var(--font-mono);
-  box-sizing: inherit;
-  display: flex;
-  right:0;
-  -webkit-box-pack: justify;
-  justify-content: space-evenly;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-}
-
-.navLink{ 
-  line-height: 1.3;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  color: var(--lightest-slate);
-  font-family: var(--font-mono);
-  list-style: none;
-  box-sizing: inherit;
-  position: relative;
-  counter-increment: item 1;
-  font-size: 1.1rem;
-  transition-delay: 0ms;
-}
-
-.navLink a{ 
-  display: inline-block;
-  text-decoration: none;
-  text-decoration-skip-ink: auto;
-  color: inherit;
-  position: relative;
-  transition: var(--transition);
-  padding: 10px;
-}
-
-.navLink a::first-letter{
-  color: var(--green);
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-}
-
-#resume{
-  font-size: var(--fz-xl);
-  line-height: 1.3;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  color: var(--lightest-slate);
-  font-family: var(--font-mono);
-  transition-delay: 400ms;
-}
-
-.link-li{
-  display: inline-block;
-}
-
-
-#s-first{
-  width:20px;
-  background-color: white;
-  height: 10px;
-}#s-sec{
-  width:15px;
-  background-color: white;
-  height: 2px;
-}#s-third{
-  width:10px;
-  background-color: white;
-  height: 2px;
-}
-
-@media screen and (max-width:768px){
-  .nav{
-    position: fixed;
-    height:40px;
-  }
-  #navLink1{
-    height: 40px;
-    line-height:40px;
-  }
-  #navIcon{
-      display:inline;
-      position:relative;
-      float:right;
-      margin-right:10vw;
-  }
-  .navLinkSpanSmall:not(:nth-child(1)){
-      display:none;
-  }
-
-  .navLinkSpanSmallToggle:not(:nth-child(1)){
-    margin-left:2vw;
-    line-height:40px;
-    width:100vw;
-    height:40px;
-  }
-
-  #navLink1.navLinkSpanSmallToggle{
-    left:2vw;
-    line-height:40px;
-    height:40px;
-  }
-
-  #navLink2.navLinkSpanSmallToggle{
-    position: absolute;
-    top:40px;
-  }
-
-  #navLink3.navLinkSpanSmallToggle{
-    position: absolute;
-    top:80px;
-  }
-
-  #navLink4.navLinkSpanSmallToggle{
-    position: absolute;
-    top:120px;
-    float:none;
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-  }
-
-}
-
-
-
-
-
-
-
-
 .lpage-nav{
   margin: 0;
   z-index: 100;
@@ -257,7 +73,7 @@
   width:25px;
 }
 
-#lpage-about,#lpage-blogs,#lpage-login,#lpage-logout,#lpage-home{
+#lpage-about,#lpage-intro,#lpage-exp,#lpage-projects,#lpage-skills{
   display: inline;
   margin-left: 3vw;
   cursor: pointer;
@@ -267,14 +83,8 @@
   margin-right:3vw;
 }
 
-#lpage-home:hover, #lpage-about:hover,#lpage-blogs:hover,#lpage-login:hover,#lpage-logout:hover{
+#lpage-about:hover,#lpage-intro:hover,#lpage-exp:hover,#lpage-projects:hover,#lpage-skills:hover{
   color:var(--green);
-}
-
-#lpage-profile{
-  border-radius: 50%;
-  background-color: white;
-  color: rgb(79, 224, 192) ;
 }
 
 @keyframes break{
@@ -320,7 +130,7 @@
       color: rgb(50, 190, 143);
   }
 
-    .lpage-navbarRightActive #lpage-home,#lpage-about,#lpage-logout{
+    .lpage-navbarRightActive #lpage-about,#lpage-intro,#lpage-exp,#lpage-projects,#lpage-skills{
       display: block;
       margin: 0;
       width: 100vw;
@@ -329,9 +139,6 @@
       font-size: 0.5rem;
       padding-left:3vw ;
       border-bottom:0.1px solid rgb(50, 190, 143);
-  }
-  .lpage-navbarRightActive #lpage-about{
-      border-top: 0.1px solid white;
   }
   .lpage-a{
       color:rgb(50, 190, 143);

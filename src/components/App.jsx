@@ -18,12 +18,12 @@ function App() {
       <About/>
       <Experience/>
       <Skils/>
+      <Projects/>
       <div className='sideBar'>
         <LeftSideNav/>
         <RightSideNav/>
       </div>
       </div>
-      <Projects/>
     </div>
   );
 }
