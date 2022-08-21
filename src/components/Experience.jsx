@@ -9,8 +9,8 @@ const Experience = () => {
         <h2>Exeprience</h2>
         <div className='exp-content'>
           <div className='sidena'>
-              <button id='btn-tcs' onClick={e =>{e.preventDefault();setState('tcs')}}
-              onFocus={(e) =>{e.currentTarget.style.borderLeft='4px solid var(--green)';e.currentTarget.style.color='var(--green)';e.currentTarget.style.backgroundColor='var(--light-navy)'}}>Tata Consultany Services</button>
+              <button id='btn-tcs' className='exp-btn' onClick={e =>{e.preventDefault();setState('tcs')}}
+              onFocus={(e) =>{e.currentTarget.style.borderLeft='4px solid var(--green)';e.currentTarget.style.color='var(--green)';e.currentTarget.style.backgroundColor='var(--light-navy)'}}>TCS</button>
           </div>
           {
             state ==='tcs' ? <TCS/> :''

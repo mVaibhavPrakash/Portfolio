@@ -48,6 +48,7 @@
 @media screen and (max-width:900px) {
     #projects{
         width:85vw;
+        z-index:5;
     }
     #projects h2{
         font-size:3rem;
