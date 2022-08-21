@@ -122,26 +122,30 @@
       display:none;
   }
   .lpage-navbarRightActive{
-      position:absolute;
+      position:fixed;
       top:100px;
       display: block;
+      width: 60%;
+      margin-left: 40%;
       float: none;
       background-color: white;
-      color: rgb(50, 190, 143);
+      height: 100vh;
   }
 
     .lpage-navbarRightActive #lpage-about,#lpage-intro,#lpage-exp,#lpage-projects,#lpage-skills{
       display: block;
       margin: 0;
       width: 100vw;
-      height: 2.5rem;
-      line-height: 2.5rem;
-      font-size: 0.5rem;
+      height: 5vh;
+      line-height: 5vh;
+      font-size: 1rem;
       padding-left:3vw ;
-      border-bottom:0.1px solid rgb(50, 190, 143);
+      border-bottom:0.1px solid rgb(10, 25, 47,0.8);
   }
   .lpage-a{
-      color:rgb(50, 190, 143);
+    color:rgb(10, 25, 47,1);
   }
-
+  .lpage-a:hover{
+    color:var(--green);
+  }
 }

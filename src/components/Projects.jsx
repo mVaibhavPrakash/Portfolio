@@ -15,7 +15,7 @@ const Projects = () => {
   const icon3 = useRef(null)
   return ( 
   <section id='projects' className='projects'>
-      <h2>My Personal Projects</h2>
+      <h2>Projects</h2>
 
     <div id='one'>
       <Project img={img1} icon={icon1} shade={shade1}/>

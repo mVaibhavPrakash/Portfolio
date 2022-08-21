@@ -7,7 +7,6 @@ const Project = ({img,shade,icon}) => {
   return (
       <div className='project-box'>
         <img className='project-img' src={img} alt="imgi" loading='lazy'/>
-        <div className='content'></div>
         <div ref={icon} className='icons' onMouseEnter={(e) =>{shade.current.style.display='none';icon.current.style.display='flex'}} onMouseLeave={(e) =>{shade.current.style.display='block';icon.current.style.display='none'}}>
           <a href='https://github.com/mvaibhavprakash/' target='__blank' className='iconn' ><FontAwesomeIcon icon={faUpRightFromSquare}/></a>
           <a href='https://github.com/mvaibhavprakash/' target='__blank' className='iconn' ><FontAwesomeIcon icon={faGithub}/></a>

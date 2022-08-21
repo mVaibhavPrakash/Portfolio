@@ -1,26 +1,24 @@
 .project-box {
     position: relative;
-    max-height:600px;
+    max-height:fit-content;
     margin:0 auto;
-    margin-bottom: 100px;
     flex-direction: column;
   }
 
   #one{
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
 
   #two{
     display: flex;
     flex-direction: row-reverse;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
 
   #three{
     display: flex;
-    margin-bottom: 70px;
-  }
+  } 
 
   #one .project-box{
     float: left;
@@ -54,7 +52,6 @@
     display: inline-block;
   }
   .project-box .icons{
-    display: none;
     align-items: center;
     justify-content: space-between;
     width: 600px;
@@ -63,20 +60,22 @@
     font-size: 50px;
     top:0;
     z-index: 3;
-    background-color: rgb(10, 25, 47,0.8);
+}
+
+.project-box .icons:hover .iconn{
+  display: flex;
 }
 
 .project-box .icons .iconn{
     margin-top: 10px;
-    display: inline-block;
+    display: none;
     line-height: 600px;
     align-items: center;
-    color: white;
+    color: rgb(10, 25, 47,0.8);
   }
 
   .iconn:nth-child(1){
     margin-left: 200px;
-
   }
 
   .iconn:nth-child(2){
@@ -107,7 +106,7 @@
     font-family: monospace;
     padding: 20px;
     width: 600px;
-    z-index: 1000;
+    z-index: 4;
   }
 
   .project-desc span{
@@ -138,23 +137,13 @@
     align-items: flex-end;
   }
 
-@media screen and (max-width:550px) {
-    .content{
-        top:150px;
-    }
-}
-
 @media screen and (max-width:1300px) {
-    .sideBar{
-        width: 100vw;
-        display: fixed;
-        bottom: 0;
-        height: 100px;
-    }
     .shade{
+      width: 100%;
       display: none;
     }
     .project{
+      display: block;
       position: absolute;
       width: 100%;
       margin: 0 auto;
@@ -166,8 +155,16 @@
       position: relative;
       display: block;
       margin: 0 auto;
-      margin-bottom: 150px;
-    }#one .project, #two .project, #three .project{
+    }
+    #one{
+      margin-bottom: 100px;
+    }
+    #two{
+      margin-bottom: 50px;
+    }#three{
+      margin-bottom: 100px;
+    }
+    #one .project, #two .project, #three .project{
       text-align: left;
       align-items: initial;
     }#one .project-box,#two .project-box,#three .project-box{
@@ -179,6 +176,7 @@
     }
     .project-box{
       width:85vw;
+      height: fit-content;
     }.project-desc{
       color: var(--light-navy);
       width: unset;
@@ -192,5 +190,60 @@
       padding: 20px;
     }.project-tech{
       padding: 20px;
-    }
+    }.project-box .icons{
+      width: 100%;
+      z-index: 5;
+  }
+  .project-box:nth-child(2){
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width:810px) {
+  #one{
+    margin-bottom: 150px;
+  }
+  #two{
+    margin-bottom: 70px;
+  }#three{
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  #one{
+    margin-bottom: 200px;
+  }
+  #two{
+    margin-bottom: 100px;
+  }#three{
+    margin-bottom: 100px;
+  }
+}@media screen and (max-width:600px) {
+  #one{
+    margin-bottom: 250px;
+  }
+  #two{
+    margin-bottom: 150px;
+  }#three{
+    margin-bottom: 100px;
+  }
+}@media screen and (max-width:500px) {
+  #one{
+    margin-bottom: 350px;
+  }
+  #two{
+    margin-bottom: 200px;
+  }#three{
+    margin-bottom: 100px;
+  }
+}@media screen and (max-width:400px) {
+  #one{
+    margin-bottom: 450px;
+  }
+  #two{
+    margin-bottom: 250px;
+  }#three{
+    margin-bottom: 100px;
+  }
 }
