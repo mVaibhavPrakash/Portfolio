@@ -71,15 +71,25 @@
     display: none;
     line-height: 600px;
     align-items: center;
+  }
+
+  .oneIco{
+    color: rgb(10, 25, 47,0.8);
+  }
+  .twoIc{
     color: rgb(10, 25, 47,0.8);
   }
 
+  .threeIco{
+    color: white;
+  }
+
   .iconn:nth-child(1){
-    margin-left: 200px;
+    margin-left: 33.3%;
   }
 
   .iconn:nth-child(2){
-    margin-right:200px;
+    margin-right:33.3%;
   }
 
   .project{
@@ -162,7 +172,10 @@
     #two{
       margin-bottom: 50px;
     }#three{
-      margin-bottom: 100px;
+      margin-bottom: 125px;
+    }
+    .project-tech{
+      width:100%;
     }
     #one .project, #two .project, #three .project{
       text-align: left;
@@ -187,9 +200,9 @@
       color: var(--light-navy);
     }
     .project-title{
-      padding: 20px;
+      padding: 10px;
     }.project-tech{
-      padding: 20px;
+      padding: 10px;
     }.project-box .icons{
       width: 100%;
       z-index: 5;
@@ -206,7 +219,17 @@
   #two{
     margin-bottom: 70px;
   }#three{
-    margin-bottom: 100px;
+    margin-bottom: 125px;
+  }
+  .project-tech{
+    width:100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .project-title{
+    margin: 0;
+  }.project-desc{
+    margin: 0;
   }
 }
 
@@ -217,7 +240,19 @@
   #two{
     margin-bottom: 100px;
   }#three{
-    margin-bottom: 100px;
+    margin-bottom: 125px;
+  }
+  .project-tech{
+    width:100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .project-title{
+    padding: 10px;
+    margin: 0;
+  }.project-desc{
+    padding: 10px;
+    margin: 0;
   }
 }@media screen and (max-width:600px) {
   #one{
@@ -226,16 +261,38 @@
   #two{
     margin-bottom: 150px;
   }#three{
-    margin-bottom: 100px;
+    margin-bottom: 125px;
+  }
+  .project-tech{
+    width:100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .project-title{
+    margin: 0;
+  }.project-desc{
+    margin: 0;
   }
 }@media screen and (max-width:500px) {
   #one{
-    margin-bottom: 350px;
+    margin-bottom: 300px;
   }
   #two{
-    margin-bottom: 200px;
+    margin-bottom: 175px;
   }#three{
-    margin-bottom: 100px;
+    margin-bottom: 125px;
+  }
+  .project-tech{
+    width:100%;
+    padding: 20px;
+    margin: 0;
+  }
+  .project-title{
+    padding: 10px;
+    margin: 0;
+  }.project-desc{
+    padding: 10px;
+    margin: 0;
   }
 }@media screen and (max-width:400px) {
   #one{
@@ -244,6 +301,18 @@
   #two{
     margin-bottom: 250px;
   }#three{
-    margin-bottom: 100px;
+    margin-bottom: 125px;
+  }
+  .project-tech{
+    width:100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .project-title{
+    padding: 10px;
+    margin: 0;
+  }.project-desc{
+    padding: 10px;
+    margin: 0;
   }
 }

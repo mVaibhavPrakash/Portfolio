@@ -9,6 +9,7 @@ export const TCS = () => {
         <p> Sep 2020 - Present</p>
         <ul>
           <li>Working as a <span>FullStack Engineer</span> where writing, maintaining and supporting a large scale distributed application</li>
+          <li>Worked on Technologies like <span>JavaScript, Vb.net, SQL Server</span></li>
           <li><span>Optimised the webpage</span> page which <span>reduced</span> the webapage loading time for critical business users <span>by 90%</span></li>
           <li><span>Automated Certificate renewel process</span> which has saved many hours of operational efforts </li>
           <li>Helped in <span>Migrating</span> a connected appliation from <span>PAP interface to RestFul</span></li>

@@ -18,7 +18,7 @@ const Projects = () => {
       <h2>Projects</h2>
 
     <div id='one'>
-      <Project img={img1} icon={icon1} shade={shade1}/>
+      <Project img={img1} icon={icon1} shade={shade1} clas='oneIco'/>
       <div className='project'>
           <p className='project-title'>
             <a href="http://github.com/mvaibhavprakash/" target="_blank" rel="noopener noreferrer">NewGen</a>
@@ -30,13 +30,14 @@ const Projects = () => {
           <span>React Markdown</span>
           <span>Redux</span>
           <span>Ngnix</span>
+          <span>Hooks</span>
           <span>JWT</span>
           </p>
       </div>
     </div>
 
     <div id='two'>
-      <Project img={img2} icon={icon2} shade={shade2}/>
+      <Project img={img2} icon={icon2} shade={shade2} clas='twoIco'/>
       <div className='project'>
           <p className='project-title'>
             <a href="http://github.com/mvaibhavprakash/" target="_blank" rel="noopener noreferrer">Neu Editor</a>
@@ -46,25 +47,22 @@ const Projects = () => {
           <span>React</span>
           <span>React Markdown</span>
           <span>CSS</span>
+          <span>Hooks</span>
           <span>Debounce</span>
           </p>
       </div>
     </div>
 
     <div id='three'>
-      <Project img={img3} icon={icon3} shade={shade3}/>
+      <Project img={img3} icon={icon3} shade={shade3} clas='threeIco'/>
       <div className='project'>
           <p className='project-title'>
             <a href="http://github.com/mvaibhavprakash/" target="_blank" rel="noopener noreferrer">NewGen</a>
           </p>
-          <p className='project-desc'>A Blogging Website. Options</p>
+          <p className='project-desc'>My Protfolio Website</p>
           <p className='project-tech'>
-            <span>APP</span>
-            <span>APP</span>
-            <span>APP</span>
-            <span>APP</span>
-            <span>APP</span>
-            <span>APP</span>
+            <span>React</span>
+            <span>CSS</span>
           </p>
       </div>
     </div>
