@@ -4,7 +4,7 @@
 
 React portfolio built with TypeScript and Vite.
 
-Requires Node.js 20.19+ or 22.12+ (Node.js 24 recommended).
+Use Node.js 24, as pinned in `.nvmrc` and the Netlify build configuration.
 
 ```sh
 npm install
@@ -21,3 +21,6 @@ npm run preview
 
 The production build runs strict TypeScript checks and writes static files to `build/`.
 Configure static hosting to publish that directory. `npm start` also runs the Vite development server.
+
+Netlify reads `netlify.toml` to select Node.js 24, run the build, and publish `build/`.
+After updating an existing Netlify site, redeploy with the build cache cleared.

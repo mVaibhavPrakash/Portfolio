@@ -20,9 +20,6 @@
     "typecheck": "tsc --noEmit && tsc --project tsconfig.node.json",
     "preview": "vite preview"
   },
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
   "devDependencies": {
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
