@@ -5,11 +5,13 @@ import About from './About';
 import Experience from './Experience';
 import LeftSideNav from './LeftSideNav'
 import RightSideNav from './RightSideNav';
-import Skils from './Skils';
+import Skills from './Skills';
 import Projects from './Projects';
-import ('../js/observer.js')
+import { useEffect } from 'react';
+import observeSections from '../js/observer';
 
 function App() {
+  useEffect(observeSections, []);
   return (
     <div className="App">
       <Navbar />
@@ -17,7 +19,7 @@ function App() {
       <Intro/>
       <About/>
       <Experience/>
-      <Skils/>
+      <Skills/>
       <Projects/>
       <div className='sideBar'>
         <LeftSideNav/>

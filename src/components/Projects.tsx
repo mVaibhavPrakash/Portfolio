@@ -7,12 +7,12 @@ import Project from './Project'
 import '../css/projects.css'
 
 const Projects = () => {
-  const shade1= useRef(null)
-  const icon1 = useRef(null)
-  const shade2= useRef(null)
-  const icon2 = useRef(null)
-  const shade3= useRef(null)
-  const icon3 = useRef(null)
+  const shade1= useRef<HTMLDivElement>(null)
+  const icon1 = useRef<HTMLDivElement>(null)
+  const shade2= useRef<HTMLDivElement>(null)
+  const icon2 = useRef<HTMLDivElement>(null)
+  const shade3= useRef<HTMLDivElement>(null)
+  const icon3 = useRef<HTMLDivElement>(null)
   return ( 
   <section id='projects' className='projects'>
       <h2>Projects</h2>

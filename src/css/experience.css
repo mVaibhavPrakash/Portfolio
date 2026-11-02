@@ -1,6 +1,6 @@
 
 #experience{
-    width:50vw;
+    width:70vw;
     margin: 0 auto;
     scroll-snap-align: start;
     margin-bottom: 125px;
@@ -25,34 +25,23 @@
     border-left: 1px solid var(--slate);
 }
 
-.exp-btn{
-    background: none;
-    border: none;
-    color: var(--lightest-slate);
-    height: 50px;
-    width:50%;
-    line-height: 50px;
-    padding:10px 20px;
-    font-size: 1.1rem;
-}
-
-#tcs{
+#exp{
     width:70%;
     margin: 0;
 }
 
-#tcs h3{
+#exp h3{
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
 }
 
-#tcs h3 span{
+#exp h3 span{
     color: var(--green);
 }
 
-#tcs p{
+#exp p{
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
@@ -69,12 +58,6 @@ li span{
 
 li::marker{
     font-size: 2rem;
-}
-
-#btn-tcs{
-    border-left: 4px solid var(--green);
-    color: var(--green);
-    background-color: var(--light-navy);
 }
 
 #experience h2{
@@ -137,16 +120,12 @@ li::marker{
         border-left: none;
         border-bottom: 1px solid var(--slate);
     }
-    #tcs{
+    #exp{
         width: 100%;
         margin-top: 50px;
     }.exp-btn{
         font-size: 1.1rem;
         width:25%;
         height: 30px;
-    }
-    #btn-tcs{
-        border-left:none;
-        border-bottom: 4px solid var(--green);
     }
 }
